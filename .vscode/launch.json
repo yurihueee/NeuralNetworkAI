@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/yurihu/Documents/SENIOR YR FALL 2023/ECE469/Hu_NN",
+      "program": "/Users/yurihu/Documents/SENIOR YR FALL 2023/ECE469/Hu_NN/build/Debug/outDebug"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+For my dataset, I used the Adults dataset found on UC Irvine Machine Learning Repository.
+This dataset predicts whether income exceeds $50k/year based on census data. 
+Link: https://archive.ics.uci.edu/dataset/2/adult
+
+For any predictors with a continuous value (age, fnlwgt, education-num, capital-gain, 
+capital-loss, hours-per-week), I divided its value by the maximum number of each category.
+So, for example age, I divided the age by 90, since 90 was the oldest age. That way these 
+continuous predictors can have a value between 0 and 1. For the discrete predictors 
+(workclass, education, marital-status, occuptation, relationship, race, sex, and native-
+country), I mapped out each category using adults/mapped-data.xlsx then normalized it. 
+
+The neural network had 12 inputs, 5 hidden nodes, and 1 output node. It was trained with a
+learning rate of 0.5 and 150 epochs and yielded a macro accuracy of 82.7%. The initial 
+weight was generated in a similar way to the wdbc data but shorter. 
+
+File information: all files found under adults folder
+
+adults-nn-init.txt: untrained neural network with 12 input nodes, 5 hidden nodes, and 1 
+                    output node
+
+adults-training.txt: file used for training initial neural network. Data is already modified
+                     from original dataset
+                
+adults-nn-trained.txt: trained neural network with 150 epochs and learning rate of 0.5
+
+adults-results.txt: result file after testing with trained neural network.
+
+adult.data: raw dataset from UCI ML Repository
+adult.test: training dataset from UCI ML Repository
+mapped-data.xlsx: mapped out dataset for predictors
